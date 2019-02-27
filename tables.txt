@@ -1,0 +1,1 @@
+dokter;kode_dokter;nama_dokter;no_telp_dokter;rumah_sakit;kode_rs;nama_rs;no_tel_rs;praktik;kode_dokter;kode_rs;jadwal_praktik;
