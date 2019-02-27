@@ -26,7 +26,7 @@ public class Tucilsbd {
         System.out.println("Input SQL Statement : ");
         String input = in.nextLine();
         
-        // sisihk
+        // menyisakan kata2 dan semicolon saja 
         String findError = input.replace(",,", " ~ ");
         String findError2 = findError.replace(";;", " ~ ");
         String upKoma = findError2.replace(",", " ");
