@@ -13,7 +13,6 @@ import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-
 /**
  *
  * @author USER
@@ -26,7 +25,7 @@ public class Tucilsbd {
         System.out.println("Input SQL Statement : ");
         String input = in.nextLine();
         
-        // menyisakan kata2 dan semicolon saja 
+        // 'dibersihkan' dulu sebelum masuk ke list untuk diproses
         String findError = input.replace(",,", " ~ ");
         String findError2 = findError.replace(";;", " ~ ");
         String upKoma = findError2.replace(",", " ");
