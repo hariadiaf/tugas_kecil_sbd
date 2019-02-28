@@ -1,0 +1,55 @@
+Buatlah aplikasi SEDERHANA untuk mem-parsing SQL statement dasar.
+Aplikasi dibangun dengan menggunakan Java console TANPA GUI.
+SQL statement harus memiliki : (1). List kolom yang dipakai, (2). Join minimal 2 table.
+
+Prerequisites   : (1). ERD yang sesuai dengan Data Dictionary yang dipakai.
+                  (2). Minimum 2 tabel dengan relasi m-m
+
+Input Aplikasi  : (1). Siapkan Data Dictionary untuk menampung semua nama tabel beserta kolomnya.
+                       Data dictionary disimpan pada file text.
+                  (2). SQL statement
+
+Output aplikasi : (1). Menampilkan nama tabel dan nama kolom untuk setiap tabel.
+                  (2). Menolak pemrosesan jika SQL Statement tidak valid.
+                  (3). Penjelasan Error message optional
+		  (4). DILARANG MENGGUNAKAN CONTOH DATA YANG SUDAH ADA DISINI!
+
+Dikumpulkan di minggu ke-7 dan PRESENTASI.
+
+Contoh Data Dictionary :
+Misal standar CSV dengan format table_name;col1;col2;col3,...#
+
+Mahasiswa;nim;nama;alamat;ipk#
+MataKuliah;kode;nama;sks#
+Registrasi;nim;kode;semester;tahun_ajar;nilai#
+
+Contoh Penggunaan Aplikasi:
+
+Masukkan SQL Statement : 
+SELECT m.nim,nama,kode,nilai FROM mahasiswa m JOIN registrasi r ON (m.nim=r.nim);
+
+Output :
+Tabel (1) : Mahasiswa
+List Kolom : nim, nama
+Tabel (2) : registrasi
+List Kolom : nim, kode, nilai
+
+--------------------------------------------------------------
+
+Masukkan SQL Statement :
+SELECT nim,alamat FROM mahasiswa
+
+Output : SQL Error (Missing ;)
+
+---------------------------------------------------------------
+
+Masukkan SQL Statement :
+SELECT nim,kode,nilai FORM registrasi;
+
+Output : SQL Error (Syntax Error)
+
+
+
+
+
+
