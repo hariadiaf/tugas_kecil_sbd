@@ -13,6 +13,7 @@ import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+
 /**
  *
  * @author USER
@@ -25,7 +26,7 @@ public class Tucilsbd {
         System.out.println("Input SQL Statement : ");
         String input = in.nextLine();
         
-        // 'dibersihkan' dulu sebelum masuk ke list untuk diproses
+        // sisihk
         String findError = input.replace(",,", " ~ ");
         String findError2 = findError.replace(";;", " ~ ");
         String upKoma = findError2.replace(",", " ");
@@ -41,10 +42,10 @@ public class Tucilsbd {
         String kata[] = delSpasi2.split(" ");
         
         // cek isi list (output satupersatu)
-//        System.out.println("Inputan user dalam array: ");
-//        for (int i = 0; i < inputan.length; i++) {
-//            System.out.println(inputan[i]);
-//        }
+        System.out.println("Inputan user dalam array: ");
+        for (int i = 0; i < kata.length; i++) {
+            System.out.println(kata[i]);
+        } 
 
         // variabel data untuk menampung semua string yang ada dalam file 
         String data = "";
